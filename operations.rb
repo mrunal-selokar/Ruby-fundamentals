@@ -33,3 +33,23 @@ end
 no=gets.to_i
 result=isPrime(no)
 puts result
+
+#split string into even places and odd places
+ def string_even_odds 
+ 	count=gets.to_i
+for i in (1..count)
+    str=gets
+    arr=str.split('')
+    left="" 
+    right=""
+    arr.each_index{|p|  if (p%2==0)
+     then left+=arr[p] 
+     else right+=arr[p] 
+     end
+     }
+     #puts left
+     #puts right
+     result=left+right
+    puts result
+ end
+end
