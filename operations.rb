@@ -53,3 +53,11 @@ for i in (1..count)
     puts result
  end
 end
+
+#function to print table of a number
+
+def table(n)
+for i in (1..10)
+    puts "#{n} x #{i} = #{n*i}"
+end
+end
